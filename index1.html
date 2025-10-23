@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Projects - StudyPoint</title>
+    <style>
+ html, body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+    box-sizing: border-box; 
+    user-select: none; 
+} 
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    width: 250px;
+    padding: 15px;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 10px;
+    text-align: left;
+}
+
+.project-card button {
+    background: #ffcc00;
+    color: #141e30;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.project-card button:hover {
+    background: #e6b800;
+}
+
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode .project-card {
+    background: #333;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+  
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+    .projects {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #darkModeToggle {
+        font-size: 18px;
+    }
+}
+
+/* Large screen (desktop or tablet) */
+@media (min-width: 1025px) {
+    .projects {
+        flex-wrap: wrap;
+        
+    }
+    .project-card {
+        width: calc(33.33% - 20px);
+        padding: 20px;
+        background: linear-gradient(135deg, #141e30, #243b55);
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section class="projects">
+        <div class="project-card" data-category="iot">
+            <h2>Weather Monitoring System</h2>
+            <p>Developed a weather monitoring system to detect the current weather.</p><br>
+            <button onclick="window.open('weather.html', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="iot">
+            <h2>Health Monitoring System</h2>
+            <p>Developed a health monitoring system using IoT to track health info.</p><br>
+            <button onclick="window.open('health-monitoring.html', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="python">
+            <h2>Hotel Management System</h2>
+            <p>Hotel management system is a software that enhances customer experience and efficiency by automating the operations of hotels.</p><br>
+            <button onclick="window.open('hotel.pdf', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="python">
+            <h2>Library Management</h2>
+            <p>Manage the library: issue, update, return and more features in Python.</p><br>
+            <!-- <button onclick="window.open('project-data-scraper.html', '_blank')">View Project</button> -->
+            <button onclick="window.open('C:\Users\Dulhan Video Film\Downloads\todo.pdf', '_blank')">View Project</button>
+
+        </div>
+        
+        <div class="project-card" data-category="c">
+            <h2>Student Information System</h2>
+            <p>Created a system to manage student records using file handling in C.</p><br>
+            <button onclick="window.open('project-student-info.html', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="c">
+            <h2>Banking System</h2>
+            <p>Developed a banking application with basic account management features using python.</p><br>
+            <!-- <button onclick="window.open('project-banking.html', '_blank')">View Project</button> -->
+            <button onclick="window.open('balance.py', '_blank')">View Project</button>
+
+        </div>
+        
+        <div class="project-card" data-category="c">
+            <h2>Inventory Management System</h2>
+            <p>Designed an inventory tracking system with object-oriented programming in C++.</p><br>
+            <button onclick="window.open('project-inventory-management.html', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="c#">
+            <h2>Movie Ticket Booking System</h2>
+            <p>Developed a ticket booking application for cinemas using C++.</p><br>
+            <button onclick="window.open('project-ticket-booking.html', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="c#">
+            <h2>Task Management System</h2>
+            <p>Developed a task management desktop application using C# and .NET.</p><br>
+            <button onclick="window.open('project-task-manager.html', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="c#">
+            <h2>Point of Sale System</h2>
+            <p>Built a POS system for small businesses using C# and SQL integration.</p><br>
+            <button onclick="window.open('project-pos.html', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="python">
+            <h2>Library Management System</h2>
+            <p>Created a library management tool for book rentals using Java Swing.</p><br>
+            <!-- <button onclick="window.open('project-library.html', '_blank')">View Project</button> -->
+            <button onclick="window.open('project-library.html', '_blank')">View Project</button>
+
+        </div>
+        
+        <div class="project-card" data-category="python">
+            <h2>Employee Management System</h2>
+            <p>Developed an employee record system using Java and JDBC.</p><br>
+            <button onclick="window.open('project-employee.html', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="web">
+            <h2>Portfolio Website</h2>
+            <p>Designed a personal portfolio website using HTML, CSS, and JavaScript.</p><br>
+            <button onclick="window.open('portfolio.html', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="web">
+            <h2>E-commerce Website</h2>
+            <p>Developed a responsive e-commerce platform using HTML, CSS, and JavaScript.</p><br>
+            <button onclick="window.open('rose.html', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="sql">
+            <h2>Hospital Database System</h2>
+            <p>Designed a database for managing patient records and appointments using SQL.</p><br>
+            <button onclick="window.open('project-hospital-db.html', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="sql">
+            <h2>School Management System</h2>
+            <p>Implemented a relational database for school operations using SQL.</p><br>
+            <button onclick="window.open('p2,2.html', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="dsa">
+            <h2>Snake Game</h2>
+            <p>Developed a snake game for children using DSA concepts.</p><br>
+            <button onclick="window.open('https://drive.google.com/drive/folders/1unQMU0JQNGvJu682b-FdMNE5BQC01O4K?usp=sharing', '_blank')">View Project</button>
+        </div>
+        
+        <div class="project-card" data-category="dsa">
+            <h2>Sudoku</h2>
+            <p>Created a Sudoku game for sharpening the brain using DSA concepts.</p><br>
+            <button onclick="window.open('https://drive.google.com/drive/folders/1jshgujkHdL1sSm5vJS5bbcQmDobldVw5?usp=drive_link', '_blank')">View Project</button>
+        </div>
+          <div class="project-card" data-category="dsa">
+            <h2>Spotify</h2>
+            <p>Created a Sudoku game for sharpening the brain using DSA concepts.</p><br>
+            <button onclick="window.open('sp.html', '_blank')">View Project</button>
+        </div>
+        
+    </section>
+</body>
+</html>
